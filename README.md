@@ -51,6 +51,17 @@ WinUSB: only windows
 
 CMSIS-DAP V1: hidapi -> Windows HID Driver -> USB Interrupt IN / OUT
 CMSIS-DAP V2: PyUSB -> WinUSB Driver -> USB Bulk IN/OUT
+你的 Python 程序
+       |
+     PyUSB
+       |
+   USB Backend
+       |
+   libusb-1.0
+       |
+   Windows USB 子系统
+       |
+     USB 设备
 
 - CMSIS-DAP command format、Command ID、response format
 ref: https://arm-software.github.io/CMSIS-DAP/latest
